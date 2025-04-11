@@ -9,12 +9,12 @@ const { exec, execSync } = require('child_process');
 const { WebSocket, createWebSocketStream } = require('ws');
 const logcb = (...args) => console.log.bind(this, ...args);
 const errcb = (...args) => console.error.bind(this, ...args);
-const UUID = process.env.UUID || '5796f623-752d-4f6a-bd9b-479908fe86ec';
+const UUID = process.env.UUID || '2e814de0-7bf9-4f9e-970d-e9fa2f1b3c20';
 const uuid = UUID.replace(/-/g, "");
 const NEZHA_SERVER = process.env.NEZHA_SERVER || 'nezha.gvkoyeb.eu.org';
 const NEZHA_PORT = process.env.NEZHA_PORT || '443';        // 端口为443时自动开启tls
 const NEZHA_KEY = process.env.NEZHA_KEY || '';             // 哪吒三个变量不全不运行
-const DOMAIN = process.env.DOMAIN || 'flare.aiusa.dpdns.org';  //项目域名或已反代的域名，不带前缀，建议填已反代的域名
+const DOMAIN = process.env.DOMAIN || 'kbbooy.ggff.net';  //项目域名或已反代的域名，不带前缀，建议填已反代的域名
 const NAME = process.env.NAME || 'JP-webhostmost-meiguo';
 const port = process.env.PORT || 3000;
 
